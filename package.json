@@ -1,0 +1,19 @@
+{
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "rabbitmq:up": "docker compose -f docker-compose.yml up -d broker",
+    "rabbitmq:down": "docker compose -f docker-compose.yml down broker",
+    "rabbitmq:stop": "docker compose -f docker-compose.yml stop broker",
+    "jaeger:up": "docker compose -f docker-compose.yml up -d jaeger",
+    "jaeger:down": "docker compose -f docker-compose.yml down jaeger",
+    "jaeger:stop": "docker compose -f docker-compose.yml stop jaeger",
+    "services:up": "docker compose -f docker-compose.yml up -d",
+    "services:stop": "docker compose -f docker-compose.yml stop",
+    "services:down": "docker compose -f docker-compose.yml down"
+  }
+}
