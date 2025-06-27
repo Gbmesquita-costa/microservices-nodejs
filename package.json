@@ -12,6 +12,9 @@
     "jaeger:up": "docker compose -f docker-compose.yml up -d jaeger",
     "jaeger:down": "docker compose -f docker-compose.yml down jaeger",
     "jaeger:stop": "docker compose -f docker-compose.yml stop jaeger",
+    "api-gateway:up": "docker compose -f docker-compose.yml up -d api-gateway",
+    "api-gateway:down": "docker compose -f docker-compose.yml down api-gateway",
+    "api-gateway:stop": "docker compose -f docker-compose.yml stop api-gateway",
     "services:up": "docker compose -f docker-compose.yml up -d",
     "services:stop": "docker compose -f docker-compose.yml stop",
     "services:down": "docker compose -f docker-compose.yml down"
